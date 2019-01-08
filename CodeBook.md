@@ -22,7 +22,6 @@ The experiments have been video-recorded to label the data manually.
 The dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
 
 The dataset includes the following files:
-=========================================
 
 - 'README.txt'
 
@@ -59,3 +58,11 @@ For more information about this dataset contact: activityrecognition@smartlab.ws
 
 
 # transformations or work that I performed to clean up the data
+
+To clean up the data the test and train datasets were merged
+
+Descriptive names were added 
+
+Activity names were assigned (intially 1-6, were changed to WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING.
+
+Data was grouped by subject and type of activity and means were taken.
