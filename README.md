@@ -5,7 +5,7 @@ Cleaning data course assignment- repository
 
 a) tidy.data.csv
 
-Data containing 180 rows and 61
+Data 180x68. A result of running run_analysis.R
 
 b) run_analysis.R
 
