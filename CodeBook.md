@@ -101,6 +101,6 @@ Data is grouped by by subject and activity using group_by
 
 Data is summarised and means are taken using summarise_all
 
-Data is saved as a csv file using write.csv
+Data is saved as a csv file using write.table
 
 
