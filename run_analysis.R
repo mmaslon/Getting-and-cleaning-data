@@ -75,4 +75,4 @@ replaceColNamePattern2 <- function(table_mean_std, pattern, replace){
 table_group<-group_by(table_mean_std, SubjectID, ActivityID)
 tidy_data<-summarise_all(table_group, funs(mean))
 #save the data
-write.csv(tidy_data, "tidy.data.csv")
+write.table(tidy_data, "tidyData.txt", row.name=FALSE)
