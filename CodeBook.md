@@ -55,14 +55,52 @@ For more information about this dataset contact: activityrecognition@smartlab.ws
 
 # the variables, 
 
+outdir   contains path to working directory
+
+fileUrl     URL for the data
+
+filename     dataset filename
+
+zipF     allows user to choose file to unzip
+
+X_test, X_train, Y_test, Y_train      data from the dataset, test and training set, test and training labels, respectively
+
+test_subject, train_subject        data identyifing subjects in test and training set, respectively
+
+test_train       combined training and test dataset
+
+features       names of all features in test_train dataset, read from features.txt file
+
+test_train_labels, test_train_subjects        combined lables, subjects for test_train dataset, respectively
+
+tables_subjectes_labels          combined subjects and labels
+
+table      the entire dataset merged
+
+
+keeps     variable keeping only columns containg mean() or std()
+
+activity_names     vector that stores activity names
+
+table_group    dataset grouped by subject and activityID
+
+tidy_data      summarised dataset whereby mean was applied to each feature for each subject and activity
 
 
 # transformations or work that I performed to clean up the data
 
-To clean up the data the test and train datasets were merged
+To clean up the data the test and train datasets are merged using rbind and cbind function
 
-Descriptive names were added 
+Descriptive names are added using features.txt. Similarly descriptive names of columns are added for Subjects and Activity. Later on these are altered to be more "user friendly"
 
-Activity names were assigned (intially 1-6, were changed to WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING.
+Data containing mean and standard deviation for each measurement is extracted using grepl
 
-Data was grouped by subject and type of activity and means were taken.
+Activity names are assigned (intially 1-6, were changed to WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING.)
+
+Data is grouped by by subject and activity using group_by
+
+Data is summarised and means are taken using summarise_all
+
+Data is saved as a csv file using write.csv
+
+
