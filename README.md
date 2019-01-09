@@ -20,3 +20,5 @@ c) README.md
 
 d) CodeBook.md
 
+It  describes the variables, the data, and any transformations or work that was performed to clean up the data
+
