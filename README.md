@@ -3,7 +3,7 @@ Cleaning data course assignment- repository
 
 # This repository contains the following files:
 
-a) tidy.data.csv
+a) tidyData.txt
 
 Data 180x68. A result of running run_analysis.R
 
